@@ -30,8 +30,8 @@
     display: none;
   }
   .menu-items{
-    height: 100%;
-    width: 100%;
+    height: calc(100% + 20vh);
+    width:100% ;
     list-style: none;
     transition: all 0s ease;
   }
@@ -47,7 +47,7 @@
 .submenu-item {
   padding: 16px;
   display: inline-block;
-  width: 80%;
+  width: 100%;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -62,11 +62,10 @@
   .submenu{
     background-color: lightcoral;
     position: absolute;
-    height: 100%;
     width: 100%;
     top: 0;
     left: calc(100%);
-    height: calc(100% + 100vh);
+    height: calc(100% + 50vh);
     display: none;
   }
 .show-submenu ~ .submenu {
@@ -78,4 +77,29 @@
   }
   .submenu .menu-title i {
     margin-left: 10px;
+  }
+  footer{
+    background-color: lightcoral;
+    position: absolute;
+    bottom:-320px;
+    left: 0;
+    right:0;
+    z-index: 1000;
+  
+  }
+  .footer-h a{
+    font-size: 12px;
+    padding: 5px;
+    color: rgb(78, 78, 78);
+  }
+  .footer-m{
+    padding: 10px 0;
+    margin-right:10px ;
+  }
+  .footer-m a{
+    padding: 10px 15px;
+  }
+  .footer-f img{
+    padding-right: 20px;
+    width: 60px;
   }
